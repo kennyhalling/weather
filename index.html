@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Activity</title>
+    <meta author="Kenneth S. Halling">
+    <meta description="Weather activity for WDD230">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Weather Across the World</h1>
+    <main>
+        <form id="location-form">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" name="city" autocomplete="off" required>
+            <ul id="suggestions" style="list-style: none; padding: 0; margin-top: 5px; border: 1px solid #ccc;"></ul>
+        </form>
+        <div id="current-weather">
+            <h2 id="location"></h2>
+            <div id="weather-main">
+                <img id="weather-icon" src="" alt="">
+                <div>
+                    <p id="current-temp"></p>
+                    <figcaption></figcaption>
+                </div>
+            </div>
+            <div id="weather-details">
+                <p id="current-humidity"></p>
+                <p id="current-wind"></p>
+            </div>
+        </div>
+        <button id="toggle-forecast" style="display:none;">7-Day Forecast</button>
+        <div id="forecast-section" style="margin-top: 20px;"></div>
+    </main>
+    <footer>
+        Kenneth S. Halling | OpenWeatherMap.org | CC BY-SA 4.0
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
